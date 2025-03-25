@@ -32,6 +32,12 @@
 
 	<dependencies>
 
+		<!-- Bean Validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
 		<!-- MySQL Driver -->
 		<dependency>
 			<groupId>com.mysql</groupId>
