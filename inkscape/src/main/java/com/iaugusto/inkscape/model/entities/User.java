@@ -5,6 +5,8 @@ import jakarta.validation.constraints.Email;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
+import java.util.List;
+
 @Entity(name = "User")
 @Table(name = "users")
 @Getter
@@ -25,7 +27,9 @@ public class User {
 
     private String password;
 
-    private Adress adress;
+    @OneToMany
+    @JoinColumn(name = "adress_id")
+    private List<Address> addresses;
 
     private String cellphone;
 

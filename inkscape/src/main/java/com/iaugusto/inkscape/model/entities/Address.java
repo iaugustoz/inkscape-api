@@ -4,14 +4,14 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
-@Entity(name = "Adress")
-@Table(name = "adress")
+@Entity(name = "Address")
+@Table(name = "address")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Adress {
+public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,17 +21,28 @@ public class Adress {
             regexp = "\\d{5}-\\d{3}",
             message = "CEP inválido. O formato correto é XXXXX-XXX"
     )
+    @Column(nullable = false)
     private String zipcode;
 
+    @Column(nullable = false)
     private String street;
 
+    @Column(nullable = false)
     private Integer number;
 
+    @Column(length = 255)
     private String complement;
 
+    @Column(nullable = false)
     private String neighborhood;
 
+    @Column(nullable = false)
     private String city;
 
+    @Column(nullable = false)
     private String state;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 }
