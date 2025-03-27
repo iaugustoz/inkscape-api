@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.iaugusto</groupId>
 	<artifactId>inkscape</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.1.0</version>
 	<name>inkscape</name>
 	<description>Sistema para gerenciamento da livraria Inkscape.</description>
 	<url/>
