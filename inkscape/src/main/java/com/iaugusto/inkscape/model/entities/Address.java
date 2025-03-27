@@ -40,6 +40,7 @@ public class Address {
     @Column(nullable = false, length = 100)
     private String city;
 
+    @Pattern(regexp = "[A-Z]{2}", message = "Estado inválido. Use a sigla (ex: SP, RJ)")
     @Column(nullable = false, length = 2)
     private String state;
 
