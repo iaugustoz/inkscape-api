@@ -18,6 +18,13 @@ O projeto utiliza as seguintes tecnologias:
 
 - **Java** (v21.0.0) - Linguagem principal do Back-End
 - **Spring Boot** (v3.4.4) - Framework para desenvolvimento ágil
+- **Spring Web** - Cria aplicaçÕes web com base em Spring
+- **MySQL Driver** - Banco de dados relacional
+- **Spring Data JPA** - ORM para integração com o banco de dados
+- **Lombok** - Redução de boilerplate no código
+- **Bean Validation** - Validação de dados de entrada
+- **Swagger OpenAPI** - Documenta aplicações e endpoints
+- **ModelMapper** - Facilita o mapeamento de objetos (sourceObject, destinationObject)
 
 ---
 
