@@ -8,7 +8,7 @@
 
 ## 🚀 **Status do Projeto**
 
-🔧 Em desenvolvimento... 
+🔧 Em desenvolvimento...
 
 ---
 
@@ -103,6 +103,12 @@ A API conta com uma documentação interativa gerada pelo **Springdoc OpenAPI**.
 1. **Execute a aplicação localmente.**
 2. **Acesse o Swagger UI:** [`http://localhost:8080/swagger-ui.html`](http://localhost:8080/swagger-ui.html)
 3. Explore e teste os endpoints diretamente pela interface gráfica.
+
+---
+
+## 📜 **Changelog**
+
+Este projeto segue um histórico de mudanças documentado no arquivo [CHANGELOG.md](./CHANGELOG.md). Consulte esse arquivo para ver as versões lançadas, novas funcionalidades, correções de bugs e melhorias.
 
 ---
 
