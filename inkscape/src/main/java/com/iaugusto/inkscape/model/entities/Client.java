@@ -2,7 +2,6 @@ package com.iaugusto.inkscape.model.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -15,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class User {
+public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,7 +35,7 @@ public class User {
     private String password;
 
     @OneToMany(
-            mappedBy = "user",
+            mappedBy = "client",
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )

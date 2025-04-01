@@ -1,7 +1,6 @@
 package com.iaugusto.inkscape.model.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
@@ -45,6 +44,6 @@ public class Address {
     private String state;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    @JoinColumn(name = "client_id", nullable = false)
+    private Client client;
 }
