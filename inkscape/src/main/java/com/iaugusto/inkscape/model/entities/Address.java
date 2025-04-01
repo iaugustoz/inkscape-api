@@ -1,5 +1,6 @@
 package com.iaugusto.inkscape.model.entities;
 
+import com.iaugusto.inkscape.model.enums.State;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
@@ -41,7 +42,7 @@ public class Address {
 
     @Pattern(regexp = "[A-Z]{2}", message = "Estado inválido. Use a sigla (ex: SP, RJ)")
     @Column(nullable = false, length = 2)
-    private String state;
+    private State state;
 
     @ManyToOne
     @JoinColumn(name = "client_id", nullable = false)
