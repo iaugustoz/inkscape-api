@@ -30,7 +30,7 @@ public enum State {
     SC("Santa Catarina"),
     SP("São Paulo"),
     SE("Sergipe"),
-    TO("Tocantis");
+    TO("Tocantins");
 
     private final String name;
 
