@@ -7,7 +7,7 @@ import org.hibernate.validator.constraints.br.CPF;
 
 import java.util.List;
 
-public record UserDTO(
+public record ClientDTO(
         @NotNull
         String name,
 
