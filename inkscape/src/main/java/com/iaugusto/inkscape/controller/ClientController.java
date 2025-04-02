@@ -1,5 +1,6 @@
 package com.iaugusto.inkscape.controller;
 
+import com.iaugusto.inkscape.controller.docs.ClientControllerDocs;
 import com.iaugusto.inkscape.model.dto.ClientDTO;
 import com.iaugusto.inkscape.model.entities.Client;
 import com.iaugusto.inkscape.service.ClientService;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ClientController {
+public class ClientController implements ClientControllerDocs {
 
     private final ClientService clientService;
 
