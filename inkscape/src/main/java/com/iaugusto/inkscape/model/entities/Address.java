@@ -5,6 +5,14 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
+/**
+ *
+ * Representa o endereço de um cliente no sistema Inkscape.
+ *
+ * @author Igor A. Santana
+ * @version 1.0.0
+ * @since Mar 26, 2025
+*/
 @Entity(name = "Address")
 @Table(name = "address")
 @Getter
