@@ -3,9 +3,11 @@ package com.iaugusto.inkscape.service;
 import com.iaugusto.inkscape.model.dto.ClientDTO;
 import com.iaugusto.inkscape.model.entities.Client;
 import com.iaugusto.inkscape.repository.ClientRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class ClientService {
 
@@ -25,6 +27,8 @@ public class ClientService {
 
         Client client = modelMapper.map(dto, Client.class);
         //user.setPassword();
+
+        log.info("Usuário {} criado com sucesso", dto.email());
 
         return clientRepository.save(client);
     }
