@@ -7,6 +7,14 @@ import org.hibernate.validator.constraints.br.CPF;
 
 import java.util.List;
 
+/**
+ *
+ * Representa os dados de um cliente no sistema Inkscape.
+ *
+ * @author Igor A. Santana
+ * @version 1.0.0
+ * @since Mar 25, 2025
+ */
 @Entity(name = "User")
 @Table(name = "users")
 @Getter
