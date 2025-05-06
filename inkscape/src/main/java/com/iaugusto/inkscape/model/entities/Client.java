@@ -6,6 +6,7 @@ import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  *
@@ -25,8 +26,8 @@ import java.util.List;
 public class Client {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     @Column(nullable = false, length = 100)
     private String name;

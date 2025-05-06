@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
+import java.util.UUID;
+
 /**
  *
  * Representa o endereço de um cliente no sistema Inkscape.
@@ -23,8 +25,8 @@ import lombok.*;
 public class Address {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     @Pattern(
             regexp = "\\d{5}-\\d{3}",
